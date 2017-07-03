@@ -1,0 +1,49 @@
+/* css reset 样式重置*/
+* {
+  padding: 0;
+  margin: 0;
+  /*所有盒子布局采用内减模式*/
+  -webkit-box-sizing: border-box;
+  /* 兼容-webkit-内核浏览器 */
+  box-sizing: border-box;
+  /*去除移动端点击高亮颜色*/
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  color: #333;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  /*后面的都是 备胎*/
+}
+ol,
+ul {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+input {
+  border: none;
+  outline: none;
+  /* 在 移动端浏览器 表单可能会出现 阴影 高亮 3d效果,需要清除*/
+  -webkit-appearance: none;
+}
+/*commom css 公共样式*/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  line-height: 0;
+  visibility: hidden;
+  height: 0;
+}
